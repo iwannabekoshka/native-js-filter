@@ -1,0 +1,69 @@
+* { margin: 0; padding: 0; box-sizing: inherit; }
+html { font-size: 62.5%; }
+body { box-sizing: border-box; font-family: monospace; background-color: #eee;}
+ul { list-style: none; }
+
+.main {
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    text-align: center;
+    border-radius: 1rem;
+
+    font-size: 2rem;
+
+    background-color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0,0,0, .2)
+}
+.title {
+    margin-bottom: 5rem;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.filter>li:not(:last-child) {
+    margin-right: 5rem;
+}
+.filter__item {
+    padding: .3em 2rem;
+    cursor: pointer;
+}
+.filter__item:hover {
+    background-color: #eee;
+}
+.filter__item--active {
+    background-color: #ccc;
+}
+.filter__item--active:hover {
+    background-color: #ccc;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.cards__item {
+    width: calc(25% - 3rem/4);
+    padding: 2rem;
+    margin-bottom: 1rem;
+
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+}
+.winter {
+    background-color: cornflowerblue;
+    color: white;
+}
+.summer {
+    background-color: yellow;
+}
+.spring {
+    background-color: yellowgreen;
+}
+.autumn {
+    background-color: darkorange;
+}
