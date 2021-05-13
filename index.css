@@ -20,25 +20,25 @@ ul { list-style: none; }
     margin-bottom: 5rem;
 }
 
-.filter {
+.list {
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
 }
-.filter>li:not(:last-child) {
+.list>li:not(:last-child) {
     margin-right: 5rem;
 }
-.filter__item {
+.list__item {
     padding: .3em 2rem;
     cursor: pointer;
 }
-.filter__item:hover {
+.list__item:hover {
     background-color: #eee;
 }
-.filter__item--active {
+.list__item--active {
     background-color: #ccc;
 }
-.filter__item--active:hover {
+.list__item--active:hover {
     background-color: #ccc;
 }
 
@@ -50,7 +50,6 @@ ul { list-style: none; }
 .cards__item {
     width: calc(25% - 3rem/4);
     padding: 2rem;
-    margin-bottom: 1rem;
 
     box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
 }
